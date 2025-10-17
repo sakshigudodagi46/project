@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Beauty Store</title>
+    <style>
+        /* --- Global Styles --- */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        body {
+            background: #f9f9f9;
+            color: #333;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* --- Header --- */
+        
+        header {
+            background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2rem;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        /* --- Navbar --- */
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: #fff;
+            padding: 0.8rem;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        nav a {
+            font-weight: bold;
+            color: #ff4e6a;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #d6335a;
+        }
+        /* --- Banner --- */
+        
+        .banner {
+            background: url('https://images.unsplash.com/photo-1608222029643-0f40f51f88bc') no-repeat center/cover;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        /* --- Product Section --- */
+        
+        .products {
+            max-width: 1100px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 1rem;
+        }
+        
+        .product-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        
+        .product-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 0.8rem 0 0.3rem;
+            color: #444;
+        }
+        
+        .price {
+            font-size: 1rem;
+            color: #ff4e6a;
+            font-weight: bold;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 0.8rem;
+            padding: 8px 15px;
+            background: #ff4e6a;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #d6335a;
+        }
+        /* --- Footer --- */
+        
+        footer {
+            background: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Nykaa Beauty Store</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#makeup">Makeup</a>
+        <a href="#skincare">Skincare</a>
+        <a href="#haircare">Haircare</a>
+        <a href="#fragrance">Fragrance</a>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        ✨ New Arrivals – Get 20% OFF ✨
+    </div>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product-card">
+            <img src="images/beauty3.avif" alt="Lipstick">
+            <h3>Matte Lipstick</h3>
+            <p class="price">₹499</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/images9.jpg" alt="Foundation">
+            <h3>Liquid Foundation</h3>
+            <p class="price">₹899</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/beauty4.avif" alt="Face Cream">
+            <h3>Moisturizing Cream</h3>
+            <p class="price">₹699</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/img1.avif" alt="Perfume">
+            <h3>Luxury Perfume</h3>
+            <p class="price">₹1299</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Nykaa Beauty Store | All Rights Reserved
+    </footer>
+</body>
+
+</html>
